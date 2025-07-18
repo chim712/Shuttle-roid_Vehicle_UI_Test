@@ -14,165 +14,24 @@
         android:layout_weight="1"
         android:background="@android:color/transparent"
         android:layout_marginTop="40dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="2dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"
-                android:background="#ffffff" />
-            <TextView
-                android:id="@+id/clockText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="12:45"
-                android:textSize="110sp"
-                android:textColor="#FFFFFF" />
-
-            <TextView
-                android:id="@+id/calendarText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="00 / 00 (Mon)"
-                android:textStyle="bold"
-                android:textSize="30sp"
-                android:textColor="#CCCCCC" />
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="2dp"
-                android:layout_marginStart="32dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginTop="10dp"
-                android:background="#ffffff" />
-        </LinearLayout>
     </FrameLayout>
 
     <!-- Route Status Fragment -->
     <FrameLayout
-        android:id="@+id/fragment_route_status"
+        android:id="@+id/fragment_routeinfo"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.8"
         android:background="@android:color/transparent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:baselineAligned="true">
-                <TextView
-                    android:id="@+id/routeName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="720-1"
-                    android:textSize="50sp"
-                    android:textColor="#77EEEE" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" 번 운행 중"
-                    android:textSize="20sp"
-                    android:textColor="#77EEEE"
-                    android:translationY="10dp"/>
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/destination"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="기흥삼성반도체 → 남한산성 입구"
-                android:textSize="16sp"
-                android:textColor="#33CCCC" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:baselineAligned="true">
-                <TextView
-                    android:id="@+id/timeLimit"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="~13:30"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    android:layout_margin="10dp"
-                    android:textColor="#33CCCC" />
-                <TextView
-                    android:id="@+id/delay"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="(+3분)"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    android:textColor="#ff3388" />
-            </LinearLayout>
-        </LinearLayout>
     </FrameLayout>
 
     <!-- Busstop Status Fragment -->
     <FrameLayout
-        android:id="@+id/fragment_busstop_status"
+        android:id="@+id/fragment_stopinfo"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight=".7"
         android:background="@android:color/transparent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <TextView
-                android:id="@+id/previousStop"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="수지구청.로얄스포츠센터.하나프라자"
-                android:textSize="16sp"
-                android:textColor="#999999" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="▼"
-                android:textSize="16sp"
-                android:textColor="#999999" />
-
-            <TextView
-                android:id="@+id/currentStop"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="수지프라자. 한국아파트"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:textColor="#ffffff" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="▼"
-                android:textSize="16sp"
-                android:textColor="#ffffff" />
-
-            <TextView
-                android:id="@+id/nextStop"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="한성아파트.한국아파트.현대1차아파트"
-                android:textSize="16sp"
-                android:textColor="#bbbbbb" />
-        </LinearLayout>
     </FrameLayout>
 
     <!-- Navigation Bar Fragment -->
@@ -184,42 +43,6 @@
         android:background="@android:color/transparent"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="40dp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center">
-
-            <Button
-                android:id="@+id/settingButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#4477ff"
-                android:text="설정"
-                android:textStyle="bold"
-                android:textSize="24sp"
-                />
-            <Button
-                android:id="@+id/emergencyButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:backgroundTint="#ee2255"
-                android:text="긴급"
-                android:textStyle="bold"
-                android:textSize="24sp"
-                />
-            <Button
-                android:id="@+id/announceButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:backgroundTint="#4477ff"
-                android:text="방송"
-                android:textStyle="bold"
-                android:textSize="24sp"
-                />
-        </LinearLayout>
     </FrameLayout>
 
 </LinearLayout>

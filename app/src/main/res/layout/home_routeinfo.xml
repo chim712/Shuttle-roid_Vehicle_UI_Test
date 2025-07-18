@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:baselineAligned="true">
+        <TextView
+            android:id="@+id/routeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="720-1"
+            android:textSize="50sp"
+            android:textColor="#77EEEE" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 번 운행 중"
+            android:textSize="20sp"
+            android:textColor="#77EEEE"
+            android:translationY="10dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기흥삼성반도체 → 남한산성 입구"
+        android:textSize="16sp"
+        android:textColor="#33CCCC" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:baselineAligned="true">
+        <TextView
+            android:id="@+id/timeLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~13:30"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textColor="#33CCCC" />
+        <TextView
+            android:id="@+id/delay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(+3분)"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#ff3388" />
+    </LinearLayout>
+</LinearLayout>

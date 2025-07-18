@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/previousStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수지구청.로얄스포츠센터.하나프라자"
+        android:textSize="16sp"
+        android:textColor="#999999" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="▼"
+        android:textSize="16sp"
+        android:textColor="#999999" />
+
+    <TextView
+        android:id="@+id/currentStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수지프라자. 한국아파트"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="▼"
+        android:textSize="16sp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/nextStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="한성아파트.한국아파트.현대1차아파트"
+        android:textSize="16sp"
+        android:textColor="#bbbbbb" />
+</LinearLayout>
