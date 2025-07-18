@@ -28,7 +28,7 @@
         android:textSize="30sp"
         android:textColor="#CCCCCC"
         android:timeZone="Asia/Seoul"
-        android:format12Hour="MM-dd (E)"
+        android:format12Hour="MM-dd (EEEE)"
         android:format24Hour="MM-dd (E)"
         />
     <View
